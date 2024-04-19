@@ -36,6 +36,8 @@ const collectEmployees = function () {
     
     continueAddingEmployee = window.confirm("Continue adding employees?");
   }
+  //sorting employees alphabetically by last name
+  employeesArray.sort(employeesArray.lastName);
   console.log({ employeesArray });
   return employeesArray;
 }
